@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --text-color: #a9b1d6;
+  --primary: #bb9af7;
+  --secondary: #2ac3de;
+  --background-color: #1a1b26;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", sans-serif;
+}
+
+body {
+  padding: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.6;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 32px;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+a {
+  color: var(--secondary);
+}
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 600px;
+}
+.tilde {
+  color: var(--primary)
+}
+.gg {
+  color: var(--secondary)
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
